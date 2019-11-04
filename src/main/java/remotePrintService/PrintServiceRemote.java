@@ -1,6 +1,5 @@
 package remotePrintService;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Collection;
@@ -31,6 +30,6 @@ public interface PrintServiceRemote extends Serializable {
 	 * @throws PrintException
 	 * @throws IOException
 	 */
-	public void PrintPdfDocument(String printerName,ByteArrayOutputStream PdfDocument)throws PrintException, IOException;
+	public void PrintPdfDocument(String printerName,byte[] PdfDocument)throws PrintException, IOException;
 
 }
