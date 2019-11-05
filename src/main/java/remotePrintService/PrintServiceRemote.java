@@ -8,7 +8,7 @@ import javax.ejb.Remote;
 import javax.print.PrintException;
 /**
  * 
- * @author ironblaster,Vidaniello
+ * @author ironblaster,vidaniello
  *
  * this method allows connection to remote printing methods
  * based on locally installed printers (on the server)
@@ -30,6 +30,6 @@ public interface PrintServiceRemote extends Serializable {
 	 * @throws PrintException
 	 * @throws IOException
 	 */
-	public void PrintPdfDocument(String printerName, byte[] PdfDocument)throws PrintException, IOException;
+	public void printPdfDocument(String printerName, byte[] pdfDocument)throws PrintException, IOException;
 
 }
