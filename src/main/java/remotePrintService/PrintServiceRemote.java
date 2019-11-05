@@ -18,18 +18,18 @@ import javax.print.PrintException;
 public interface PrintServiceRemote extends Serializable {
 	
 	/**
-	 * 
+	 * Return a list of installed printers
 	 * @return Collection of printer names installed on server
 	 */
 	public Collection<String> getIntalledPrinters();
 	
 	/**
-	 * 
+	 * Print the array to specified printer
 	 * @param printerName Installed on server (use getInstalledPrinters)
 	 * @param PdfDocument
 	 * @throws PrintException
 	 * @throws IOException
 	 */
-	public void PrintPdfDocument(String printerName,byte[] PdfDocument)throws PrintException, IOException;
+	public void PrintPdfDocument(String printerName, byte[] PdfDocument)throws PrintException, IOException;
 
 }
