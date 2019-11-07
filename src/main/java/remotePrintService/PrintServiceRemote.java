@@ -23,6 +23,8 @@ public interface PrintServiceRemote extends Serializable {
 	 */
 	public Collection<String> getIntalledPrinters();
 	
+	
+	
 	/**
 	 * Print the array to specified printer
 	 * @param printerName Installed on server (use getInstalledPrinters)
@@ -31,15 +33,5 @@ public interface PrintServiceRemote extends Serializable {
 	 * @throws IOException
 	 */
 	public void printPdfDocument(String printerName, byte[] pdfDocument)throws PrintException, IOException;
-	
-	
-	/**
-	 * Print the array to specified printer
-	 * @param printerName Installed on server (use getInstalledPrinters)
-	 * @param PdfDocument
-	 * @throws PrintException
-	 * @throws IOException
-	 */
-	public void printPdfDocument(String printerName, byte[] pdfDocument,Integer nCopie)throws PrintException, IOException;
 
 }
