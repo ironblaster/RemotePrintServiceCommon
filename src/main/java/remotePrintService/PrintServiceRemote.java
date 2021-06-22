@@ -33,5 +33,14 @@ public interface PrintServiceRemote extends Serializable {
 	 * @throws IOException
 	 */
 	public void printPdfDocument(String printerName, byte[] pdfDocument)throws PrintException, IOException;
-
+	
+	
+	/**
+	 * Print a Zpl Label to specified printer
+	 * @param printerName Installed on server (use getInstalledPrinters)
+	 * @param ZplCode
+	 * @throws PrintException
+	 * @throws IOException
+	 */
+	public void printZplLabel(String printerName, String ZplCode) throws PrintException, IOException;
 }
